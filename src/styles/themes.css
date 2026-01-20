@@ -1,0 +1,172 @@
+/* Modern (Default) */
+[data-theme='modern'] {
+  --color-primary: #2563eb;
+  --color-secondary: #f3f4f6;
+  --color-text: #1f2937;
+  --font-heading: 'Inter', sans-serif;
+  --font-body: 'Inter', sans-serif;
+  --resume-bg: #ffffff;
+}
+
+/* Professional */
+[data-theme='professional'] {
+  --color-primary: #1e3a8a;
+  /* Deep Blue */
+  --color-secondary: #e2e8f0;
+  --color-text: #334155;
+  --font-heading: 'Merriweather', serif;
+  --font-body: 'Poppins', sans-serif;
+}
+
+/* Creative */
+[data-theme='creative'] {
+  --color-primary: #db2777;
+  /* Pink */
+  --color-secondary: #fae8ff;
+  --color-text: #4a044e;
+  --font-heading: 'Poppins', sans-serif;
+  --font-body: 'Inter', sans-serif;
+}
+
+/* Minimalist */
+[data-theme='minimalist'] {
+  --color-primary: #000000;
+  --color-secondary: #ffffff;
+  --color-text: #171717;
+  --font-heading: 'Inter', sans-serif;
+  --font-body: 'Inter', sans-serif;
+  --border-style: none;
+}
+
+[data-theme='minimalist'] .resume-header {
+  text-align: center;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+/* Executive */
+[data-theme='executive'] {
+  --color-primary: #0f172a;
+  /* Slate 900 */
+  --color-secondary: #cbd5e1;
+  --color-text: #0f172a;
+  --font-heading: 'Merriweather', serif;
+  --font-body: 'Merriweather', serif;
+}
+
+[data-theme='executive'] .resume-header h1 {
+  font-family: 'Merriweather', serif;
+  text-transform: capitalize;
+}
+
+/* Ivy League */
+[data-theme='ivy'] {
+  --color-primary: #14532d;
+  /* Dartmouth Green */
+  --color-secondary: #f0fdf4;
+  --color-text: #14532d;
+  --font-heading: 'Times New Roman', serif;
+  --font-body: 'Times New Roman', serif;
+}
+
+[data-theme='ivy'] .resume-section-title {
+  border-bottom: 2px solid #14532d;
+  text-align: center;
+  font-style: italic;
+}
+
+/* Tech */
+[data-theme='tech'] {
+  --color-primary: #0ea5e9;
+  /* Sky 500 */
+  --color-secondary: #0f172a;
+  /* Dark bg check? No, print needs white usually. */
+  --color-text: #334155;
+  --font-heading: 'Courier New', monospace;
+  --font-body: 'Inter', sans-serif;
+}
+
+[data-theme='tech'] .resume-name::before {
+  content: "> ";
+  color: var(--color-primary);
+}
+
+/* Startup */
+[data-theme='startup'] {
+  --color-primary: #f97316;
+  /* Orange */
+  --color-secondary: #fff7ed;
+  --color-text: #431407;
+  --font-heading: 'Poppins', sans-serif;
+  --font-body: 'Inter', sans-serif;
+}
+
+[data-theme='startup'] .resume-header {
+  background-color: var(--color-secondary);
+  padding: 2rem;
+  margin: -10mm -10mm 2rem -10mm;
+  border-bottom: none;
+}
+
+/* Compact */
+[data-theme='compact'] {
+  --color-primary: #4b5563;
+  --color-secondary: #f3f4f6;
+  --color-text: #111827;
+  --font-heading: 'Inter', sans-serif;
+  --font-body: 'Inter', sans-serif;
+  font-size: 0.9em;
+}
+
+/* Elegant */
+[data-theme='elegant'] {
+  --color-primary: #7c3aed;
+  /* Violet */
+  --color-secondary: #f5f3ff;
+  --color-text: #2e1065;
+  --font-heading: 'Playfair Display', serif;
+  /* Need import? Fallback serif */
+  --font-body: 'Inter', sans-serif;
+}
+
+[data-theme='elegant'] .resume-header {
+  text-align: center;
+}
+
+/* Swiss */
+[data-theme='swiss'] {
+  --color-primary: #ef4444;
+  /* Red */
+  --color-secondary: #ffffff;
+  --color-text: #000000;
+  --font-heading: 'Helvetica', 'Arial', sans-serif;
+  --font-body: 'Helvetica', 'Arial', sans-serif;
+}
+
+[data-theme='swiss'] .resume-section-title {
+  border-top: 4px solid var(--color-primary);
+  border-bottom: none;
+  padding-top: 0.5rem;
+}
+
+/* Glitch (Cyberpunk) */
+[data-theme='glitch'] {
+  --color-primary: #000000;
+  --color-secondary: #00ff41;
+  /* Text color really */
+  --color-text: #000000;
+  --font-heading: 'Courier New', monospace;
+  --font-body: 'Courier New', monospace;
+  /* This one is bold */
+}
+
+[data-theme='glitch'] .resume-name {
+  text-shadow: 2px 2px 0px #00ff41;
+}
+
+/* Global utility for application */
+/* Apply variables */
+[data-theme] h1,
+[data-theme] h2,
+[data-theme] h3 {
+  color: var(--color-primary);
+}
