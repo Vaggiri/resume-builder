@@ -1,16 +1,60 @@
-# React + Vite
+# Resumify - Modern Resume Builder
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![Resumify Logo](public/logo.png)
 
-Currently, two official plugins are available:
+**Resumify** is a powerful, interactive resume builder built with modern web technologies. Create professional, ATS-friendly resumes in minutes with our real-time editor and live preview.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Live Demo
 
-## React Compiler
+[**Launch Resumify**](https://Vaggiri.github.io/resume-builder/)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## ✨ Features
 
-## Expanding the ESLint configuration
+- **Real-time Live Preview**: See changes instantly as you type.
+- **Interactive Editor**: Easy-to-use forms for Personal Details, Experience, Education, Skills, and Projects.
+- **Drag & Drop Layout**: (Coming Soon) Customize your resume layout effortlessly.
+- **PDF Export**: Download your high-quality resume as a PDF with one click.
+- **ATS Friendly**: Clean, structured templates designed to pass Applicant Tracking Systems.
+- **Responsive Design**: Works on desktop and tablets.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🛠️ Tech Stack
+
+- **Frontend Framework**: [React](https://react.dev/)
+- **Build Tool**: [Vite](https://vitejs.dev/)
+- **Styling**: [Tailwind CSS](https://tailwindcss.com/)
+- **Animations**: [Framer Motion](https://www.framer.com/motion/)
+- **Routing**: [React Router](https://reactrouter.com/)
+- **Icons**: [Lucide React](https://lucide.dev/)
+- **PDF Generation**: [html2canvas](https://html2canvas.hertzen.com/) & [jsPDF](https://github.com/parallax/jsPDF)
+
+## 📦 Installation & Usage
+
+1.  **Clone the repository**
+    ```bash
+    git clone https://github.com/Vaggiri/resume-builder.git
+    cd resume-builder
+    ```
+
+2.  **Install dependencies**
+    ```bash
+    npm install
+    ```
+
+3.  **Start development server**
+    ```bash
+    npm run dev
+    ```
+    Open [http://localhost:5173](http://localhost:5173) to view it in the browser.
+
+4.  **Build for production**
+    ```bash
+    npm run build
+    ```
+
+## 🤝 Contributing
+
+Contributions are welcome! Please read our [Contributing Guidelines](CONTRIBUTING.md) for details.
+
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.

@@ -11,7 +11,7 @@ import ResumePreview from './components/preview/ResumePreview';
 function App() {
   return (
     <ResumeProvider>
-      <Router>
+      <Router basename={import.meta.env.BASE_URL}>
         <Routes>
           <Route path="/" element={<Navigate to="/editor/personal" replace />} />
           <Route path="/editor" element={<EditorLayout />}>
